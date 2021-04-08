@@ -1,0 +1,75 @@
+body{
+	margin-top: 100px;
+    background-color: #4b556b;
+	display: flex;
+	justify-content: center;
+    font-family: fantasy !important;
+}
+.container{
+    background-color:#161A24;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    
+}
+.child{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    grid-row: span 2;
+    justify-self: center;
+}
+.numeros{
+    background-color: #232938;
+    grid-row: span 5 !important;
+    border-radius: 10px;
+}
+.container-numeros{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 30px;
+    padding: 15px;
+}
+.igualdad{
+    grid-row: span 2;
+    background-color: cyan !important;
+    color: #232938 !important;
+}
+.boton{
+    font-family: fantasy !important;
+    padding: 8px;
+    background-color: #232938;
+    border-style: solid;
+    border-color: #232938;
+    color: #8997BB;
+    border-radius: 70px;
+}
+.celeste{
+    color: cyan;
+}
+.num-guardado, .signo, .num-actual {
+    padding-right: 15px;
+    display: flex;
+    justify-self: flex-end;
+}
+.signos{
+    background-color: #323B4C;
+}
+.cancelar{
+    background-color: #CD2C57;
+    color: rgb(236, 229, 229) !important;
+}
+@media ( hover:hover ){
+    .boton:hover{
+        background-color: rgba(21, 172, 172, 0.5) !important;
+        border-style: solid;
+        border-radius: 1px;
+        border-color: rgb(21, 172, 172);
+    }
+}
